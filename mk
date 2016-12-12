@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd docs
+
 pandoc -o presentation.html \
   -t revealjs               \
   -V theme=solarized          \
@@ -7,6 +9,6 @@ pandoc -o presentation.html \
   --mathjax                 \
   --smart                   \
   --standalone              \
-  presentation.md
+  ../presentation.md
 
 # --include-after-body=client.js
