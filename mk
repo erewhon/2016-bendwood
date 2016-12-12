@@ -2,7 +2,7 @@
 
 cd docs
 
-pandoc -o presentation.html \
+pandoc -o index.html \
   -t revealjs               \
   -V theme=solarized          \
   --incremental             \
